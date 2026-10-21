@@ -35,7 +35,7 @@ handled better by exact keyword matching plus a small always-on brief.
 ### From the Harness UI
 
 Settings → Plugins → Add plugin. With an npm release, search
-`@echothesky/dsh-project`; otherwise install from a local directory or Git URL
+`dsh-project-control`; otherwise install from a local directory or Git URL
 below.
 
 ### CLI
@@ -44,8 +44,8 @@ below.
 # local checkout (the plugin_manager target is an absolute directory)
 dsh plugin --profile web add /absolute/path/to/dsh-project
 
-# npm release (the unscoped `dsh-project` name is taken by an unrelated package)
-dsh plugin --profile web add @echothesky/dsh-project
+# npm release (`dsh-project` itself is taken by an unrelated package)
+dsh plugin --profile web add dsh-project-control
 
 # Git (pnpm installs the package from the repository)
 dsh plugin --profile web add git+https://github.com/echothesky/dsh-project.git

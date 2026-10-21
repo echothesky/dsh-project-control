@@ -9,7 +9,7 @@
  * from the browser module table.
  */
 window.__ModuleLoader__.load({
-  id: '@echothesky/dsh-project',
+  id: 'dsh-project-control',
   factory(require) {
     const React = require('react')
     const h = React.createElement

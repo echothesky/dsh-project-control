@@ -2,7 +2,7 @@
 # The row loads this package's main entry as a Host-only Cordis plugin.
 - insert:
     - id: dsh-project
-      name: '@echothesky/dsh-project'
+      name: dsh-project-control
       config:
         maxBriefChars: 1200
         maxRecallHits: 5

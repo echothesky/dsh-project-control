@@ -1,5 +1,5 @@
 {
-  "name": "@echothesky/dsh-project",
+  "name": "dsh-project-control",
   "version": "0.2.0",
   "description": "Durable project memory for DeepSeek Harness: layered brief injection, decision/constraint/contract store with keyword recall, compaction handoff, module binding, on-demand skill export, and a Web board.",
   "type": "module",

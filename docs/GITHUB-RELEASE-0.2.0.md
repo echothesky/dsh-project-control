@@ -48,8 +48,8 @@ starts cold.
 ## Install
 
 ```sh
-# npm (published under the author scope; the unscoped name is taken)
-dsh plugin --profile web add @echothesky/dsh-project
+# npm
+dsh plugin --profile web add dsh-project-control
 
 # Git
 dsh plugin --profile web add git+https://github.com/echothesky/dsh-project.git
@@ -57,6 +57,9 @@ dsh plugin --profile web add git+https://github.com/echothesky/dsh-project.git
 # local checkout
 dsh plugin --profile web add /absolute/path/to/dsh-project
 ```
+
+> The npm package is `dsh-project-control`; the plain `dsh-project` name is
+> owned by an unrelated `0.0.1` package.
 
 The first client load needs **one application restart** (the harness caches
 package manifests for the Host lifetime). After that, host-side edits reload

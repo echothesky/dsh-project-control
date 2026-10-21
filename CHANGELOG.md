@@ -8,9 +8,10 @@ First consolidated release.
 
 ### Packaging
 
-- Published as **`@echothesky/dsh-project`**: the unscoped `dsh-project` name is
-  owned by an unrelated `0.0.1` package on npm. The bundle row name and the
-  client bundle id match the scoped package name.
+- Published as **`dsh-project-control`**: the unscoped `dsh-project` name is
+  owned by an unrelated `0.0.1` package on npm, so this package uses a distinct
+  unscoped name. The bundle row name and the client bundle id match the package
+  name.
 
 ### Added
 
