@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented here.
 
+## [Unreleased]
+
+### Documentation
+
+- Bilingual README: English (`README.md`) and 简体中文 (`README.zh-CN.md`), with a
+  language switcher at the top of both files.
+
 ## [0.2.0] - 2026-10-21
 
 First consolidated release.
