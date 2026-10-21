@@ -47,7 +47,7 @@ dsh plugin --profile web add /absolute/path/to/dsh-project
 dsh plugin --profile web add dsh-project
 
 # Git (pnpm installs the package from the repository)
-dsh plugin --profile web add git+https://github.com/OWNER/dsh-project.git
+dsh plugin --profile web add git+https://github.com/echothesky/dsh-project.git
 ```
 
 The repository root is the plugin package (`dsh.bundle.patch` + `dsh.client`),

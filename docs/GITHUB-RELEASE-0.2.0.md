@@ -52,7 +52,7 @@ starts cold.
 dsh plugin --profile web add dsh-project
 
 # Git
-dsh plugin --profile web add git+https://github.com/OWNER/dsh-project.git
+dsh plugin --profile web add git+https://github.com/echothesky/dsh-project.git
 
 # local checkout
 dsh plugin --profile web add /absolute/path/to/dsh-project

@@ -58,15 +58,15 @@
     "skills",
     "modules"
   ],
-  "author": "dsh-project contributors",
+  "author": "echothesky",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/dsh-project.git"
+    "url": "git+https://github.com/echothesky/dsh-project.git"
   },
-  "homepage": "https://github.com/OWNER/dsh-project#readme",
+  "homepage": "https://github.com/echothesky/dsh-project#readme",
   "bugs": {
-    "url": "https://github.com/OWNER/dsh-project/issues"
+    "url": "https://github.com/echothesky/dsh-project/issues"
   },
   "publishConfig": {
     "access": "public"
