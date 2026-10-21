@@ -1,0 +1,14 @@
+# dsh-project bundle patch.
+# The row loads this package's main entry as a Host-only Cordis plugin.
+- insert:
+    - id: dsh-project
+      name: dsh-project
+      config:
+        maxBriefChars: 1200
+        maxRecallHits: 5
+        resumeBriefChars: 300
+        autoHandoff: true
+        handoffEveryTurns: 10
+        autoExport: true
+        autoExportDelayMs: 1500
+        readOnly: false

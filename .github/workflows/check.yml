@@ -1,0 +1,24 @@
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Syntax check host and client halves
+        run: |
+          node --input-type=module --check < index.js
+          node --input-type=module --check < client.js
+      - name: Validate manifest and locales
+        run: |
+          node -e "for (const f of ['package.json','locale/en.json','locale/zh.json']) { JSON.parse(require('fs').readFileSync(f,'utf8')); } console.log('json ok')"
+      - name: Verify bundle assets exist
+        run: |
+          node -e "const fs=require('fs'); for (const f of ['index.js','client.js','icon.svg','cordis.patch.yml']) if (!fs.existsSync(f)) throw new Error('missing '+f); console.log('assets ok')"

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Project Memory",
+    "description": "Durable project memory: a compact project brief injected before requests, decision/constraint entries stored in .dsh/project with keyword recall, so work survives session switches and context compaction."
+  }
+}
