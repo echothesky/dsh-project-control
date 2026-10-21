@@ -1,5 +1,9 @@
 # dsh-project-control
 
+[![check](https://github.com/echothesky/dsh-project-control/actions/workflows/check.yml/badge.svg)](https://github.com/echothesky/dsh-project-control/actions/workflows/check.yml)
+[![npm](https://img.shields.io/npm/v/dsh-project-control.svg)](https://www.npmjs.com/package/dsh-project-control)
+[![license](https://img.shields.io/github/license/echothesky/dsh-project-control.svg)](LICENSE)
+
 Durable project memory and modular-development workflow for [DeepSeek Harness](https://www.deepseek.com/harness/).
 
 Long sessions hit the context limit; compaction keeps a generic summary and drops
