@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" role="img" aria-labelledby="title desc">
+  <title id="title">dsh-project overview</title>
+  <desc id="desc">Project state lives in plain files; a brief is injected into the model context before each step, compaction writes a handoff and injects a resume brief, and memory is exported as on-demand skills.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect x="8" y="8" width="1184" height="624" rx="18" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+
+  <text x="40" y="56" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="26" font-weight="700" fill="#0f172a">dsh-project</text>
+  <text x="40" y="82" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="14" fill="#475569">Durable project memory for DeepSeek Harness — state outside the context, a compact brief inside it.</text>
+
+  <!-- Left: project state -->
+  <rect x="40" y="112" width="400" height="470" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="64" y="146" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#0f172a">Project state · plain files</text>
+  <text x="64" y="168" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#64748b">.dsh/project/ (diffable, hand-editable)</text>
+
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif">
+    <rect x="64" y="184" width="352" height="76" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="80" y="210" font-size="13" font-weight="600" fill="#0f172a">brief.notes.md</text>
+    <text x="80" y="232" font-size="12" fill="#475569">goals and hard rules, human-pinned</text>
+
+    <rect x="64" y="272" width="352" height="76" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="80" y="298" font-size="13" font-weight="600" fill="#0f172a">entries/&lt;type&gt;/&lt;id&gt;.md</text>
+    <text x="80" y="320" font-size="12" fill="#475569">decision · constraint · glossary · question · contract · note</text>
+
+    <rect x="64" y="360" width="352" height="76" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="80" y="386" font-size="13" font-weight="600" fill="#0f172a">modules/&lt;id&gt;.md</text>
+    <text x="80" y="408" font-size="12" fill="#475569">cards, deps, contracts, next step · sessions.json binding</text>
+
+    <rect x="64" y="448" width="352" height="76" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="80" y="474" font-size="13" font-weight="600" fill="#0f172a">handoff/latest.md</text>
+    <text x="80" y="496" font-size="12" fill="#475569">goal · module · next step · active files</text>
+  </g>
+
+  <!-- Right: model context -->
+  <rect x="720" y="112" width="440" height="150" rx="14" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="744" y="146" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#1e3a8a">Model context (session)</text>
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1e40af">
+    <text x="744" y="176">brief · brief-update · resume</text>
+    <text x="744" y="200">injected as a sourced user/message</text>
+    <text x="744" y="224">system prompt untouched → prefix KV cache survives</text>
+  </g>
+
+  <!-- Right: compaction -->
+  <rect x="720" y="296" width="440" height="130" rx="14" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+  <text x="744" y="330" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#78350f">Compaction ends</text>
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#92400e">
+    <text x="744" y="360">writes handoff/latest.md</text>
+    <text x="744" y="384">next request gets a resume brief (≤300 chars)</text>
+    <text x="744" y="408">the summary may forget; the files do not</text>
+  </g>
+
+  <!-- Right: skills -->
+  <rect x="720" y="460" width="440" height="122" rx="14" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+  <text x="744" y="494" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#064e3b">Skills · .dsh/skills</text>
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#065f46">
+    <text x="744" y="524">module-&lt;id&gt; · project-contracts · project-memory</text>
+    <text x="744" y="548">only name + description resident; body loads on demand</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#2563eb" stroke-width="2.4" fill="none">
+    <path d="M444 190 H 712" marker-end="url(#arrow)"/>
+    <path d="M720 248 H 448" marker-end="url(#arrow)"/>
+    <path d="M940 264 V 292" marker-end="url(#arrow)"/>
+    <path d="M444 556 H 712" marker-end="url(#arrow)" stroke-dasharray="7 5"/>
+  </g>
+  <g font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#1d4ed8">
+    <text x="456" y="178">brief injection · pre-step · ≤1200 chars</text>
+    <text x="456" y="272">project_remember · project_module · project_handoff</text>
+    <text x="456" y="544">export · auto (debounced)</text>
+  </g>
+
+  <text x="40" y="616" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="12" fill="#64748b">No embeddings · no vector database · no network calls — a few hundred curated entries beat semantic retrieval at this scale.</text>
+</svg>

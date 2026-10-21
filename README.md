@@ -24,6 +24,12 @@ your repository — and injects back only a compact brief:
 No embeddings, no vector database, no network calls: a few hundred entries are
 handled better by exact keyword matching plus a small always-on brief.
 
+## Demo
+
+![dsh-project overview: brief injection, compaction handoff, modules, contracts, and skills](docs/assets/overview.svg)
+
+<!-- Recording placeholder: drop a short screen recording at docs/assets/demo.gif and embed it above the diagram. -->
+
 ## Install
 
 ### From the Harness UI
