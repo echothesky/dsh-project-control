@@ -104,6 +104,7 @@
 ## 七、安装与升级
 
 - 全新安装：`plugin_manager install_bundle`，target 为 `packages/dsh-project` 绝对路径；
+- npm：包名 `@echothesky/dsh-project`（未加 scope 的 `dsh-project` 已被无关的 0.0.1 占用）；
 - 本地链接包升级：`remove_bundle` → `install_bundle`；
 - **新增/修改 `dsh.client` 声明需要重启应用一次**（`dsh-client-modules` 按 `(baseUrl, loader name)` 缓存 manifest）；宿主侧改动与客户端 bundle 内容改动均可热重载/刷新页面；
 - 卸载插件不影响 `.dsh/project` 数据（真相在文件）。

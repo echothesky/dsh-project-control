@@ -6,6 +6,12 @@ All notable changes to this project are documented here.
 
 First consolidated release.
 
+### Packaging
+
+- Published as **`@echothesky/dsh-project`**: the unscoped `dsh-project` name is
+  owned by an unrelated `0.0.1` package on npm. The bundle row name and the
+  client bundle id match the scoped package name.
+
 ### Added
 
 - **Layer brief injection** (`agent/pre-step`): project layer (goal, global

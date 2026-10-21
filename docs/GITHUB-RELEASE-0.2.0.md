@@ -48,8 +48,8 @@ starts cold.
 ## Install
 
 ```sh
-# npm (once published)
-dsh plugin --profile web add dsh-project
+# npm (published under the author scope; the unscoped name is taken)
+dsh plugin --profile web add @echothesky/dsh-project
 
 # Git
 dsh plugin --profile web add git+https://github.com/echothesky/dsh-project.git
