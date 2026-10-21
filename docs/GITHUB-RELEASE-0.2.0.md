@@ -1,4 +1,4 @@
-# dsh-project 0.2.0
+# dsh-project-control 0.2.0
 
 Durable project memory for [DeepSeek Harness](https://www.deepseek.com/harness/):
 keep decisions, constraints, contracts and open questions outside the model
@@ -52,7 +52,7 @@ starts cold.
 dsh plugin --profile web add dsh-project-control
 
 # Git
-dsh plugin --profile web add git+https://github.com/echothesky/dsh-project.git
+dsh plugin --profile web add git+https://github.com/echothesky/dsh-project-control.git
 
 # local checkout
 dsh plugin --profile web add /absolute/path/to/dsh-project

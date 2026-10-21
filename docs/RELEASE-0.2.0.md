@@ -1,4 +1,4 @@
-# dsh-project 0.2.0 · 发布说明
+# dsh-project-control 0.2.0 · 发布说明
 
 日期：2026-10-21
 包位置：`packages/dsh-project/`（本地 bundle，安装于 profile `desktop`）

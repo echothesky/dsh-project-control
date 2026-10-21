@@ -1,4 +1,4 @@
-# dsh-project
+# dsh-project-control
 
 Durable project memory and modular-development workflow for [DeepSeek Harness](https://www.deepseek.com/harness/).
 
@@ -6,7 +6,7 @@ Long sessions hit the context limit; compaction keeps a generic summary and drop
 the decisions, constraints and open questions that actually drive the work. New
 sessions start cold. Different modules compete for one context window.
 
-`dsh-project` keeps that state **outside** the model context — as plain files in
+`dsh-project-control` keeps that state **outside** the model context — as plain files in
 your repository — and injects back only a compact brief:
 
 - a **layered brief** (project + module) before each request, budgeted in
@@ -48,7 +48,7 @@ dsh plugin --profile web add /absolute/path/to/dsh-project
 dsh plugin --profile web add dsh-project-control
 
 # Git (pnpm installs the package from the repository)
-dsh plugin --profile web add git+https://github.com/echothesky/dsh-project.git
+dsh plugin --profile web add git+https://github.com/echothesky/dsh-project-control.git
 ```
 
 The repository root is the plugin package (`dsh.bundle.patch` + `dsh.client`),

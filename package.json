@@ -62,11 +62,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/echothesky/dsh-project.git"
+    "url": "git+https://github.com/echothesky/dsh-project-control.git"
   },
-  "homepage": "https://github.com/echothesky/dsh-project#readme",
+  "homepage": "https://github.com/echothesky/dsh-project-control#readme",
   "bugs": {
-    "url": "https://github.com/echothesky/dsh-project/issues"
+    "url": "https://github.com/echothesky/dsh-project-control/issues"
   },
   "publishConfig": {
     "access": "public"
